@@ -9,12 +9,13 @@ h1 {
     font-size: 36px; /* Large font size for header */
     color: #13c01c; /* Green color for header */
     text-align: center;
+    background-color: darkgrey;
 }
 
 
 /* Paragraph Styles */
 p {
-    font-size: 18px; /* Medium font size for paragraphs */
+    font-size: 20px; /* Medium font size for paragraphs */
     color: #333; /* Dark gray color for paragraphs */
     margin-bottom: 20px; /* Add margin between paragraphs */
 }

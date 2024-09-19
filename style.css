@@ -1,0 +1,27 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Header Styles */
+h1 {
+    font-size: 36px; /* Large font size for header */
+    color: #13c01c; /* Green color for header */
+    text-align: center;
+}
+
+
+/* Paragraph Styles */
+p {
+    font-size: 18px; /* Medium font size for paragraphs */
+    color: #333; /* Dark gray color for paragraphs */
+    margin-bottom: 20px; /* Add margin between paragraphs */
+}
+
+/* Link Styles */
+a {
+    font-size: 24px; /* Large font size for link */
+    color: #251ac5; /* Blue color for link */
+    text-decoration: none; /* Remove underline from link */
+}

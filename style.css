@@ -1,28 +1,88 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Light gray background */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 /* Header Styles */
 h1 {
-    font-size: 36px; /* Large font size for header */
-    color: #13c01c; /* Green color for header */
+    font-size: 36px;
+    color: #13c01c;
     text-align: center;
     background-color: darkgrey;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
+/* Text Background Color */
+.text-background {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-/* Paragraph Styles */
-p {
-    font-size: 20px; /* Medium font size for paragraphs */
-    color: #333; /* Dark gray color for paragraphs */
-    margin-bottom: 20px; /* Add margin between paragraphs */
+/* Comments Styles */
+.comments {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comments h3 {
+    margin-top: 0;
+}
+
+.comments form {
+    margin-top: 20px;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.comments button {
+    background-color: #13c01c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Link Styles */
 a {
-    font-size: 24px; /* Large font size for link */
-    color: #251ac5; /* Blue color for link */
-    text-decoration: none; /* Remove underline from link */
+    font-size: 24px;
+    color: #251ac5;
+    font-weight: bold;
+}
+
+/* Homepage Styles */
+.homepage {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.homepage h1 {
+    font-size: 48px;
+    color: #13c01c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.homepage p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ric's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="content-container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, comments, or feedback, feel free to reach out to us! We would love to hear from you.</p>
+
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <h2>Additional Contact Information</h2>
+            <p>You can also reach us at:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="ricskitchen143@gmail.com">ricskitchen143@gmail.com</a></li>
+                <li><strong>Phone:</strong> +63 993 018 3189</li>
+                <li><strong>Follow Us:</strong>
+                    <ul>
+                        <li><a href="https://web.facebook.com/profile.php?id=61568122326781" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/f.r.a.n.c.i.s.21?fbclid=IwZXh0bgNhZW0CMTAAAR2IH6N7cQp5nOmvqtj2PhW0z8itcs7CbJkgewT8tsTavO1XeC_qLX6BvlA_aem_Ok2ykLbDslsHy6HzmX8kEw" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/RicsKitchen" target="_blank">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></a>
+
+    <footer>
+        <p>&copy; Ric's Kitchen 2024</p>
+    </footer>
+
+    <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Show the button when the user scrolls down 100px from the top of the document
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scroll effect
+            });
+        };
+    </script>
+</body>
+</html>

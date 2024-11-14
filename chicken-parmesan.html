@@ -6,24 +6,23 @@
   <title>Chicken Parmesan</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="grilled-chicken.html">Grilled Chicken Marinade</a></li>
-        <li><a href="chicken-soup.html">Chicken Soup</a></li>
-        <li><a href="chicken-parmesan.html">Chicken Parmesan</a></li>
-        <li><a href="chicken-tacos.html">Chicken Tacos</a></li>
-        <li><a href="chicken-salad.html">Chicken Salad</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
       </ul>
     </nav>
   </header>
   <main>
   <section id="chicken-parmesan">
     <h1>Chicken Parmesan</h1>
-    <img src="chicken-parmesan.avif" alt="chicken-parmesan" class="image-done">
+    <img src="Chicken Parmesan - Two Peas & Their Pod.jpg" alt="chicken-parmesan" class="image-done">
   <p>My version of chicken Parmesan is a little different than what they do in the restaurants, with less sauce and a crispier crust.</p>
   <h3>How to Make Chicken Parmesan That's Never Soggy</h3>
   <p>Chicken Parmesan is no doubt the most popular non-pasta dish in Italian-American style restaurants. And while this delicious meal may seem fancy, it's actually pretty easy to make at home.</p>
@@ -96,10 +95,34 @@
       <p>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</p>
       <p>** Nutrient information is not available for all ingredients. Amount is based on available nutrient data.</p>
       <p>(-) Information is not currently available for this nutrient. If you are following a medically restrictive diet, please consult your <br> doctor or registered dietitian before preparing this recipe for personal consumption.</p>
-      </section>
-</main>
-<footer>
-  <p>&copy; Ric's Chicken Recipes 2024</p>
-</footer>
+    </section>
+  </main>
+  <a href="#" class="scroll-to-top" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></a>
+
+  <footer>
+      <p>&copy; Ric's Kitchen 2024</p>
+  </footer>
+
+  <script>
+      // Get the button
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show the button when the user scrolls down 100px from the top of the document
+      window.onscroll = function() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              scrollToTopBtn.style.display = "block";
+          } else {
+              scrollToTopBtn.style.display = "none";
+          }
+      };
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopBtn.onclick = function() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth' // Smooth scroll effect
+          });
+      };
+  </script>
 </body>
-</html>
+</html>   

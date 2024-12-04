@@ -15,7 +15,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +26,7 @@
             <p>If you have any questions, comments, or feedback, feel free to reach out to us! We would love to hear from you.</p>
 
             <h2>Contact Form</h2>
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -38,11 +38,12 @@
 
                 <button type="submit">Send Message</button>
             </form>
+            <div id="successMessage" style="display:none; color: green;">Your message has been sent successfully!</div>
 
             <h2>Additional Contact Information</h2>
             <p>You can also reach us at:</p>
             <ul>
-                <li><strong>Email:</strong> <a href="ricskitchen143@gmail.com">ricskitchen143@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:ricskitchen143@gmail.com">ricskitchen143@gmail.com</a></li>
                 <li><strong>Phone:</strong> +63 993 018 3189</li>
                 <li><strong>Follow Us:</strong>
                     <ul>
@@ -62,7 +63,19 @@
     </footer>
 
     <script>
-        // Get the button
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Here you can add your form submission logic (e.g., AJAX request)
+            // For demonstration, we'll just show a success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Clear the form fields
+            this.reset();
+        });
+
+        // Scroll to top button functionality
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
         // Show the button when the user scrolls down 100px from the top of the document
@@ -74,13 +87,13 @@
             }
         };
 
-        // When the user clicks on the button, scroll to the top of the document
-        scrollToTopBtn.onclick = function() {
+        // Smooth scroll to top when the button is clicked
+        scrollToTopBtn.addEventListener("click", function() {
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth' // Smooth scroll effect
+                behavior: "smooth"
             });
-        };
+        });
     </script>
 </body>
 </html>
